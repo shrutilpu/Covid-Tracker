@@ -1,0 +1,9 @@
+.Precaution{
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
+@media(min-width:500px){
+ .Precaution{
+  display: inline-flex;
+ }
+}

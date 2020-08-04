@@ -1,0 +1,11 @@
+
+.Chart{
+ margin-bottom: 20px;
+ height: 300px;
+}
+@media(min-width:500px){
+ .Chart{
+  align-items: center;
+  height: 400px;
+ }
+}

@@ -1,0 +1,22 @@
+.Link{
+    padding: 5px;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 0;
+    display: inline-flexbox;
+    float: left;
+    color: black;
+}
+.Link a{
+ text-decoration: none;
+ color: #fff;
+}
+
+@media(max-width:500px){
+  .Link{
+      display: inline-flexbox;
+      float: none;
+  }
+}

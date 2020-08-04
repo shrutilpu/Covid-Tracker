@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+.Appheader {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(16, 148, 67);
+  height: 150px;
+  padding: 20px;
+  color: #000;
+  background-image: url(./Images/background.jpg);
+  background-size: cover;
+}
+.Covid{
+  padding-top: 200px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+@media(max-width:500px)
+{
+  .Covid{
+    padding-top: 10px;
+  }
+  .Appheader .nav{
+ display: none;
+  }
+  .Appheader h1{
+    margin-bottom: 5px;
+  }
+}
