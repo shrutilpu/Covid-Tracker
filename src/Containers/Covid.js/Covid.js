@@ -20,14 +20,15 @@ class Covid extends Component {
      return {key :item[0],value:item[1]}
    });
 
-     this.setState({covidCase:globalData})
+     this.setState({covidCase:globalData});
      //console.log(this.state.covidCase);
    });
  }
  render() {
    let cards = null;
    if(this.state.covidCase)
-  { cards = this.state.covidCase.map(
+  { //console.log(this.state.covidCase)
+    cards = this.state.covidCase.map(
     covid =>{
      return <Cards key={covid.key} title={covid.key} Content={covid.value}/>
     }
@@ -35,7 +36,7 @@ class Covid extends Component {
    return (
      <div className={classes.Covid}>
        <section className={classes.Cards}>
-      {cards}
+       {cards}
        </section>
       <section className={classes.chart}>
       <Chart/>

@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import classes from './India.css';
 
-import Aux from '../../Hoc/Aux'
 import axios from '../../axios.js/axios';
 import Cards from '../../Components/CardDiplay/Card';
 import Chart from '../../Components/ChartIndia/ChartIndia';
@@ -33,7 +32,7 @@ componentDidMount(){
   }
   
   return (
-   <Aux>
+   <div className={classes.India}>
     <header className={classes.IndiaHeader}>
     <h1> India </h1>
     </header>
@@ -41,7 +40,7 @@ componentDidMount(){
    <section className={classes.Chart}>
     <Chart/>
    </section>
-   </Aux>
+   </div>
    
   );
  }

@@ -5,13 +5,8 @@ const links=()=>{
    return (
        <div>
         <Link link='/' name='Home'/>
-        <Link link='/' name='India'/>
-        <Link link='/' name='Countries'/>
-        <Link link='/' name='Precautions'/>
-        <Link link='/' name='essentials'/>
-        
-        
-        
+        <Link link='/india' name='India'/>
+        <Link link='/precautions' name='Precautions'/>
        </div>
    );
  

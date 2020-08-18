@@ -1,9 +1,10 @@
 import React from 'react';
 import classes from './Links.css';
+import {Link} from 'react-router-dom';
 const link =(props)=>{
 return (
  <div className={classes.Link}>
-  <a href={props.link}>{props.name}</a>
+  <Link to={props.link}>{props.name}</Link>
  </div>
 );
 }

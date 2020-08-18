@@ -5,7 +5,8 @@ import Covid from './Containers/Covid.js/Covid';
 import Link from './Components/Links/navigation';
 import DrawerToggle from './Components/UI/Sidedrawer/Drawertoggle/drawerToggle';
 import Sidedrawer from './Components/UI/Sidedrawer/sideDrawer';
-
+import {Route,Switch} from 'react-router-dom';
+import India from './Containers/India/India';
 class App extends Component {
   
   state={
@@ -29,12 +30,14 @@ class App extends Component {
                         close={this.closeSideDrawerHandler}/>
             <div className={classes.nav}>
             <Link/>
-            </div>
-              
+            </div>      
         </header>
-        <div className={classes.Covid}>
-        <Covid/>
-        </div>
+        <Switch>
+        <Route path="/india"><India/></Route>
+        <Route path="/"><Covid/></Route>
+        </Switch>
+        
+        
         
       </div>
     );

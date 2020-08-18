@@ -1,7 +1,12 @@
 .Covid{
  background-color: aliceblue;
- 
 }
 .India{
  padding-top: 10px;
 }
+@media(max-width:500px)
+{
+  .Covid{
+    padding-top: 10px;
+  }
+ }
